@@ -1,26 +1,22 @@
 # 🦀🕸️ `wasm-game-of-life`
 
-## 🛠️ Build with `wasm-pack build`
 
+## Setup
+
+Dependencies: Node.JS and Rust toolchain
+
+Install wasm-pack: https://rustwasm.github.io/wasm-pack/installer/
+
+Update NPM: npm install npm@latest -g
+
+## 🚴 Run the app via Rust web assembly and Node.js
 ```
+cargo build
 wasm-pack build
-```
-
-## 🔬 Test in Headless Browsers with `wasm-pack test`
-
-```
-wasm-pack test --headless --firefox
-```
-
-## 🎁 Publish to NPM with `wasm-pack publish`
-
-```
-wasm-pack publish
-```
-
-## Run the app via Node.js
-```
-cd ./www
+cd ./pkg
+npm link
+cd ../www
+npm link wasm-game-of-life
 npm run start
 ```
 
@@ -49,3 +45,20 @@ publishing the resulting package to NPM.
   for small code size.
 
 ## 🚴 Usage
+## 🛠️ Build with `wasm-pack build`
+
+```
+wasm-pack build
+```
+
+## 🔬 Test in Headless Browsers with `wasm-pack test`
+
+```
+wasm-pack test --headless --firefox
+```
+
+## 🎁 Publish to NPM with `wasm-pack publish`
+
+```
+wasm-pack publish
+```
