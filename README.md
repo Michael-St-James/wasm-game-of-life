@@ -1,5 +1,31 @@
-# 🦀🕸️ `wasm-pack-template`
+# 🦀🕸️ `wasm-game-of-life`
 
+## 🛠️ Build with `wasm-pack build`
+
+```
+wasm-pack build
+```
+
+## 🔬 Test in Headless Browsers with `wasm-pack test`
+
+```
+wasm-pack test --headless --firefox
+```
+
+## 🎁 Publish to NPM with `wasm-pack publish`
+
+```
+wasm-pack publish
+```
+
+## Run the app via Node.js
+```
+cd ./www
+npm run start
+```
+
+
+## Started with `wasm-pack-template`
 A template for kick starting a Rust and WebAssembly project using
 [`wasm-pack`](https://github.com/rustwasm/wasm-pack).
 
@@ -23,30 +49,3 @@ publishing the resulting package to NPM.
   for small code size.
 
 ## 🚴 Usage
-
-### 🐑 Use `cargo generate` to Clone this Template
-
-[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
-
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
-```
-
-### 🛠️ Build with `wasm-pack build`
-
-```
-wasm-pack build
-```
-
-### 🔬 Test in Headless Browsers with `wasm-pack test`
-
-```
-wasm-pack test --headless --firefox
-```
-
-### 🎁 Publish to NPM with `wasm-pack publish`
-
-```
-wasm-pack publish
-```
